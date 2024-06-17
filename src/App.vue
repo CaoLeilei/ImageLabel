@@ -1,5 +1,27 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
+
+const handleImageClick = (e) => {
+  console.log(e.target.data)
+  console.log(wx)
+  wx.previewImage({
+
+  })
+  // wx.chooseImage(1)
+  // // alert(123)
+  // wx.showMenuItems({
+  //   menuList: [
+  //     "share:appMessage"
+  //   ] // 要显示的菜单项，所有menu项见附录3
+  // });
+
+
+  // console.log('hello world')
+  // wx.previewImage({
+  //   current: './assets/WechatIMG130.jpg', // 当前显示图片的http链接
+  //   urls: ['./assets/WechatIMG130.jpg'] // 需要预览的图片http链接列表
+  // });
+}
 </script>
 
 <template>
@@ -7,9 +29,7 @@ import HelloWorld from './components/HelloWorld.vue'
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    <img show-menu-by-longpress="true" src="./assets/WechatIMG130.jpg" style="width: 100%; height: auto;" class="logo vue" alt="Vue logo" @click="handleImageClick" />
   </div>
   <HelloWorld msg="Vite + Vue" />
 </template>
