@@ -9,9 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "less": "^4.2.0",
+    "ol": "^9.2.4",
     "vue": "^3.4.21"
   },
   "devDependencies": {
+    "@vitejs/plugin-basic-ssl": "^1.1.0",
     "@vitejs/plugin-vue": "^5.0.4",
     "vite": "^5.2.0"
   }
