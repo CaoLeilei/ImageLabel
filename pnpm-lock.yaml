@@ -29,6 +29,9 @@ importers:
       vue:
         specifier: ^3.4.21
         version: 3.4.27
+      vue-router:
+        specifier: ^4.3.3
+        version: 4.3.3(vue@3.4.27)
     devDependencies:
       '@vitejs/plugin-basic-ssl':
         specifier: ^1.1.0
@@ -818,6 +821,11 @@ packages:
       '@vue/composition-api':
         optional: true
 
+  vue-router@4.3.3:
+    resolution: {integrity: sha512-8Q+u+WP4N2SXY38FDcF2H1dUEbYVHVPtPCPZj/GTZx8RCbiB8AtJP9+YIxn4Vs0svMTNQcLIzka4GH7Utkx9xQ==}
+    peerDependencies:
+      vue: ^3.2.0
+
   vue@3.4.27:
     resolution: {integrity: sha512-8s/56uK6r01r1icG/aEOHqyMVxd1bkYcSe9j8HcKtr/xTOFWvnzIVTehNW+5Yt89f+DLBe4A569pnZLS5HzAMA==}
     peerDependencies:
@@ -1531,6 +1539,11 @@ snapshots:
 
   vue-demi@0.14.8(vue@3.4.27):
     dependencies:
+      vue: 3.4.27
+
+  vue-router@4.3.3(vue@3.4.27):
+    dependencies:
+      '@vue/devtools-api': 6.6.3
       vue: 3.4.27
 
   vue@3.4.27:

@@ -9,13 +9,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "less": "^4.2.0",
     "element-plus": "^2.6.2",
+    "less": "^4.2.0",
     "lodash": "^4.17.21",
     "nanoid": "^5.0.7",
     "ol": "^9.2.4",
     "pinia": "^2.1.7",
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.3"
   },
   "devDependencies": {
     "@vitejs/plugin-basic-ssl": "^1.1.0",

@@ -4,7 +4,8 @@
   </div>
 </template>
 
-<script setup lang="js">
+<script setup>
+
 </script>
 
 <style lang="less" scoped>
